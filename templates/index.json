@@ -1,0 +1,683 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "video_hero_YCXxcj": {
+      "type": "video-hero",
+      "name": "Video hero",
+      "settings": {
+        "container": "w-full",
+        "hero_size": "adapt",
+        "show_overlay": true,
+        "video_type": "shopify",
+        "shopify_video": "shopify://files/videos/0306.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "content_in_container": true,
+        "content_position": "center middle",
+        "text_alignment": "center",
+        "text_size": "medium",
+        "text_color": "white",
+        "title": "Supera Tus Límites",
+        "subtitle": "",
+        "text": "<p>Equipos, ropa deportiva y accesorios premium diseñados para llevar tu rendimiento al siguiente nivel, en casa o en el gimnasio.<br/><br/></p>",
+        "button_label": "Comprar Ahora",
+        "button_link": "",
+        "button_style": "sf__btn-primary",
+        "button_size": "",
+        "use_content_above": false,
+        "custom_class": ""
+      }
+    },
+    "16363603444aee9960": {
+      "type": "custom-content",
+      "blocks": {
+        "b56e351e-c043-4a5b-978b-46bf141724e6": {
+          "type": "image_card",
+          "settings": {
+            "width": "33%",
+            "content_position": "center_center",
+            "content_alignment": "center",
+            "text_size": "medium",
+            "text_color": "white",
+            "image": "shopify://shop_images/b007603a-4399-415f-b512-9bf3364d50cb.png",
+            "link": "shopify://collections/suplementos",
+            "title": "",
+            "subtitle": "",
+            "button_label": "",
+            "button_style": "sf__btn-link",
+            "button_size": "sf__btn-large",
+            "use_content_above": false,
+            "block_custom_class": "sf__custom-image-card-block-1"
+          }
+        },
+        "a6207bb1-e98f-407e-8e40-dbe86de9d293": {
+          "type": "image_card",
+          "settings": {
+            "width": "33%",
+            "content_position": "center_center",
+            "content_alignment": "center",
+            "text_size": "medium",
+            "text_color": "white",
+            "image": "shopify://shop_images/2nd.png",
+            "link": "shopify://collections/favoritos",
+            "title": "",
+            "subtitle": "",
+            "button_label": "",
+            "button_style": "sf__btn-link",
+            "button_size": "sf__btn-large",
+            "use_content_above": false,
+            "block_custom_class": "sf__custom-image-card-block-1"
+          }
+        },
+        "af54b0a0-e5c7-4190-9b2a-9f89ec349829": {
+          "type": "image_card",
+          "settings": {
+            "width": "33%",
+            "content_position": "center_center",
+            "content_alignment": "center",
+            "text_size": "medium",
+            "text_color": "white",
+            "image": "shopify://shop_images/Screenshot.png",
+            "link": "shopify://collections/tech-accessories",
+            "title": "",
+            "subtitle": "",
+            "button_label": "",
+            "button_style": "sf__btn-link",
+            "button_size": "sf__btn-large",
+            "use_content_above": false,
+            "block_custom_class": "sf__custom-image-card-block-1"
+          }
+        }
+      },
+      "block_order": [
+        "b56e351e-c043-4a5b-978b-46bf141724e6",
+        "a6207bb1-e98f-407e-8e40-dbe86de9d293",
+        "af54b0a0-e5c7-4190-9b2a-9f89ec349829"
+      ],
+      "settings": {
+        "heading": "Compra Nuestra Colección de Suplementos",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "",
+        "gap": 30,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "sf__custom-content-1"
+      }
+    },
+    "162252047554676bc9": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "NUESTROS MÁS VENDIDOS",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "rgba(0,0,0,0)",
+        "collection": "favoritos",
+        "enable_flashsale": true,
+        "show_countdown": false,
+        "product_to_show": 5,
+        "items_per_row": 5,
+        "item_gap": 30,
+        "pcard_layout": "",
+        "pcard_image_ratio": "",
+        "show_vendor": false,
+        "hide_title": false,
+        "enable_slider": false,
+        "show_pagination": false,
+        "show_navigation": false,
+        "button_type": "link",
+        "button_text": "Compra más",
+        "button_style": "sf__btn-primary",
+        "button_size": "",
+        "infinite_load": false,
+        "max_page_load": 3,
+        "use_scroll_mobile": true,
+        "item_gap_mobile": 16,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "sf__index-featured-collection"
+      }
+    },
+    "new_featured_product_t7mPfR": {
+      "type": "new-featured-product",
+      "blocks": {
+        "title_EqjRFd": {
+          "type": "title",
+          "settings": {}
+        },
+        "price_9TawdJ": {
+          "type": "price",
+          "settings": {
+            "show_saving": false
+          }
+        },
+        "variant_picker_7phtBd": {
+          "type": "variant_picker",
+          "settings": {}
+        },
+        "buy_buttons_BhUAch": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_atc_button": true,
+            "show_dynamic_checkout": true
+          }
+        }
+      },
+      "block_order": [
+        "title_EqjRFd",
+        "price_9TawdJ",
+        "variant_picker_7phtBd",
+        "buy_buttons_BhUAch"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "container": "container",
+        "background_color": "rgba(0,0,0,0)",
+        "featured_product": "munequeras-profesionales-milcosas-fitness-soporte-ajustable-para-levantamiento-de-pesas-proteccion-antideslizante-premium-1",
+        "column_gap": 100,
+        "column_gap_mobile": 30,
+        "image_placement": "left",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "16363624673307470a": {
+      "type": "image-with-text",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "container": "container-fluid",
+        "background_color": "rgba(0,0,0,0)",
+        "item_gap": 120,
+        "item_gap_mobile": 30,
+        "image": "shopify://shop_images/WhatsApp_Image_2026-03-15_at_1.50.02_AM_5_cb412103-e613-4f96-be36-f83ff223ff86.jpg",
+        "link": "shopify://collections/favoritos",
+        "layout": "left",
+        "image_column_size": "6",
+        "hover_effect": true,
+        "title": "Entrena Más Fuerte Cada Día",
+        "sub_title": "NUEVO",
+        "text": "<p>Descubre nuestras últimas novedades en equipos de entrenamiento, ropa deportiva y suplementos de rendimiento. Diseñados para ofrecer comodidad, durabilidad y ayudarte a alcanzar tus metas más rápido.</p>",
+        "text_size": "large",
+        "content_alignment": "left",
+        "button_label": "Compra ahora",
+        "button_link": "shopify://collections/favoritos",
+        "button_style": "sf__btn-primary",
+        "button_size": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "16225208417f633bd7": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "Mejores Ofertas de la Semana",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "rgba(0,0,0,0)",
+        "collection": "suplementos",
+        "enable_flashsale": false,
+        "show_countdown": false,
+        "product_to_show": 5,
+        "items_per_row": 5,
+        "item_gap": 30,
+        "pcard_layout": "",
+        "pcard_image_ratio": "",
+        "show_vendor": false,
+        "hide_title": false,
+        "enable_slider": false,
+        "show_pagination": false,
+        "show_navigation": false,
+        "button_type": "link",
+        "button_text": "Compra más",
+        "button_style": "sf__btn-primary",
+        "button_size": "",
+        "infinite_load": false,
+        "max_page_load": 3,
+        "use_scroll_mobile": true,
+        "item_gap_mobile": 16,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "sf__index-featured-collection"
+      }
+    },
+    "new_featured_product_HmHJAq": {
+      "type": "new-featured-product",
+      "blocks": {
+        "title_b4kzEb": {
+          "type": "title",
+          "settings": {}
+        },
+        "price_EEiHLJ": {
+          "type": "price",
+          "settings": {
+            "show_saving": false
+          }
+        },
+        "variant_picker_6yimWG": {
+          "type": "variant_picker",
+          "settings": {}
+        },
+        "buy_buttons_bw8Y7r": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_atc_button": true,
+            "show_dynamic_checkout": true
+          }
+        }
+      },
+      "block_order": [
+        "title_b4kzEb",
+        "price_EEiHLJ",
+        "variant_picker_6yimWG",
+        "buy_buttons_bw8Y7r"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "container": "container",
+        "background_color": "rgba(0,0,0,0)",
+        "featured_product": "rodillo-removedor-de-pelos-de-mascotas-reutilizable-con-deposito-limpia-sofas-ropa-y-alfombras",
+        "column_gap": 100,
+        "column_gap_mobile": 30,
+        "image_placement": "left",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "16363652651c1a7c52": {
+      "type": "image-with-text",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "container": "container-fluid",
+        "background_color": "rgba(0,0,0,0)",
+        "item_gap": 120,
+        "item_gap_mobile": 30,
+        "image": "shopify://shop_images/home-product-section_1.png",
+        "link": "shopify://collections/suplementos",
+        "layout": "right",
+        "image_column_size": "6",
+        "hover_effect": true,
+        "title": "Formulado Científicamente Para Resultados Reales",
+        "sub_title": "COLECCIÓN",
+        "text": "<p>Nuestra fórmula premium de creatina está diseñada para apoyar la fuerza, la resistencia y el crecimiento muscular magro. Elaborada con ingredientes de alta calidad y probada para garantizar pureza, ofrece 5000 mg por porción para ayudarte a entrenar más fuerte y recuperarte más rápido.</p>",
+        "text_size": "medium",
+        "content_alignment": "left",
+        "button_label": "Comprar la Colección",
+        "button_link": "shopify://collections/suplementos",
+        "button_style": "sf__btn-primary",
+        "button_size": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "16363653089f0b6a2b": {
+      "type": "image-with-text-2",
+      "settings": {
+        "container": "w-full",
+        "hero_size": "small",
+        "show_overlay": true,
+        "image": "shopify://shop_images/banner-2x_1.png",
+        "bg_position": "center",
+        "image_link": "",
+        "parallax": false,
+        "content_in_container": false,
+        "content_position": "left middle",
+        "text_alignment": "left",
+        "text_size": "medium",
+        "text_color": "white",
+        "title": "Mejora Tu Rendimiento",
+        "subtitle": "",
+        "text": "<p>Equipos y suplementos seleccionados para llevar tu entrenamiento al siguiente nivel.</p>",
+        "button_label": "Explorar Ahora",
+        "button_link": "shopify://collections/favoritos",
+        "button_style": "sf__btn-primary",
+        "button_size": "",
+        "use_content_above": false,
+        "custom_class": ""
+      }
+    },
+    "featured_collection_KKKRTL": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "heading": "Nuevas llegadas",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "rgba(0,0,0,0)",
+        "collection": "equipos",
+        "enable_flashsale": false,
+        "show_countdown": false,
+        "product_to_show": 4,
+        "items_per_row": 4,
+        "item_gap": 30,
+        "pcard_layout": "",
+        "pcard_image_ratio": "",
+        "show_vendor": false,
+        "hide_title": false,
+        "enable_slider": false,
+        "show_pagination": false,
+        "show_navigation": false,
+        "button_type": "link",
+        "button_text": "Compra más",
+        "button_style": "sf__btn-primary",
+        "button_size": "",
+        "infinite_load": false,
+        "max_page_load": 3,
+        "use_scroll_mobile": true,
+        "item_gap_mobile": 16,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "custumer_reviews_WfW76w": {
+      "type": "custumer-reviews",
+      "blocks": {
+        "review_UAcmzR": {
+          "type": "review",
+          "settings": {
+            "reviews": "5",
+            "name": "Michael Carter",
+            "designation": "",
+            "review": "<p><br/>Honestamente me sorprendió lo sólida que es la calidad. El producto se siente premium y funciona exactamente como se describe. El envío fue más rápido de lo esperado. Sin duda volveré a comprar.</p>",
+            "image": "shopify://shop_images/1_1.png",
+            "product_name": ""
+          }
+        },
+        "review_KjMDjk": {
+          "type": "review",
+          "settings": {
+            "reviews": "4.5",
+            "name": "Daniel Brooks",
+            "designation": "",
+            "review": "<p><br/>Lo he estado usando durante algunas semanas y ya puedo notar mejoras en mis entrenamientos. Se mezcla bien y no me causa molestias. Muy satisfecho con mi compra.</p>",
+            "image": "shopify://shop_images/w2_1.png",
+            "product_name": ""
+          }
+        },
+        "review_zFtiG6": {
+          "type": "review",
+          "settings": {
+            "reviews": "5",
+            "name": "Ashley Morgan",
+            "designation": "",
+            "review": "<p><br/>El empaque fue limpio y profesional, y la calidad del producto habla por sí sola. Se nota que la marca se enfoca en el rendimiento. Lo recomiendo totalmente.</p>",
+            "image": "shopify://shop_images/4_1.png",
+            "product_name": ""
+          }
+        },
+        "review_r7BxGf": {
+          "type": "review",
+          "settings": {
+            "reviews": "4",
+            "name": "Ryan Mitchell",
+            "designation": "",
+            "review": "<p><br/>Este fue mi segundo pedido y nuevamente todo llegó en perfectas condiciones. Servicio confiable y excelentes productos. Es difícil encontrar tanta consistencia.</p>",
+            "image": "shopify://shop_images/3_1.png",
+            "product_name": ""
+          }
+        }
+      },
+      "block_order": [
+        "review_UAcmzR",
+        "review_KjMDjk",
+        "review_zFtiG6",
+        "review_r7BxGf"
+      ],
+      "name": "BOOST : Review Slider",
+      "settings": {
+        "heading": "Comentarios de clientes",
+        "heading_color": "#ffffff",
+        "section_bg_color": "#000000",
+        "bg_color": "linear-gradient(180deg, rgba(255, 255, 255, 1) 100%, rgba(0, 0, 0, 1) 100%)",
+        "star_color": "#ffb400",
+        "text_color": "#000000",
+        "parallax": false,
+        "bg_size": "contain",
+        "bg_pos": "center",
+        "text-align": "center",
+        "block-style": "style2",
+        "sildes_to_show": 4,
+        "autoplay_slider": true,
+        "show_dots": true,
+        "ele-space": 10,
+        "radius": 10,
+        "max_width": 1600,
+        "margin-top": 0,
+        "margin-bottom": 0,
+        "padding-top": 30,
+        "padding-bottom": 30,
+        "padding-inline": 10
+      }
+    },
+    "custom_faq_BkeWfw": {
+      "type": "custom-faq",
+      "blocks": {
+        "text_4YnqTC": {
+          "type": "text",
+          "settings": {
+            "question": "¿Qué tipo de productos ofrecen?",
+            "answer": "<p>Ofrecemos una amplia variedad de equipos de entrenamiento, ropa deportiva, accesorios y suplementos de rendimiento diseñados para apoyar tus objetivos tanto en casa como en el gimnasio.</p>"
+          }
+        },
+        "text_QpdpV3": {
+          "type": "text",
+          "settings": {
+            "question": "¿Cuánto tiempo tarda el envío?",
+            "answer": "<p>El tiempo de envío depende de tu ubicación. La mayoría de los pedidos se procesan rápidamente y se entregan dentro del plazo estimado que se muestra al finalizar la compra.</p>"
+          }
+        },
+        "text_m9meTb": {
+          "type": "text",
+          "settings": {
+            "question": "¿Sus suplementos son seguros y de alta calidad?",
+            "answer": "<p>Sí. Nuestros suplementos están elaborados con ingredientes de calidad y siguen estándares estrictos de fabricación para garantizar consistencia y seguridad.</p>"
+          }
+        },
+        "text_UU9eBf": {
+          "type": "text",
+          "settings": {
+            "question": "¿Puedo devolver o cambiar un producto?",
+            "answer": "<p>Sí. Si recibes un artículo dañado o incorrecto, contacta a nuestro equipo de atención al cliente y te ayudaremos con el proceso de devolución o cambio.</p>"
+          }
+        },
+        "text_HRaGmi": {
+          "type": "text",
+          "settings": {
+            "question": "¿Cómo puedo contactar con atención al cliente?",
+            "answer": "<p>Puedes comunicarte con nuestro equipo a través del formulario de contacto en nuestra página web. Nuestro objetivo es responder lo antes posible.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_4YnqTC",
+        "text_QpdpV3",
+        "text_m9meTb",
+        "text_UU9eBf",
+        "text_HRaGmi"
+      ],
+      "name": "BOOST : Modern FAQ",
+      "settings": {
+        "heading": "PREGUNTAS FRECUENTES",
+        "subheading": "Encuentre respuestas a preguntas comunes sobre nuestros productos",
+        "tag": "h2",
+        "text_alignment": "center",
+        "heading_size": 42,
+        "layout_style": "modern",
+        "border_radius": 16,
+        "spacing_between": 12,
+        "max_width": 800,
+        "question_size": 18,
+        "answer_size": 16,
+        "question_weight": 600,
+        "heading_color": "#ffffff",
+        "subheading_color": "#ffffff",
+        "question_color": "#000000",
+        "question_bg": "#ffffff",
+        "question_hover_bg": "#f8f9fa",
+        "answer_color": "#4a4a4a",
+        "answer_bg": "#fafafa",
+        "icon_color": "#6aaa12",
+        "border_color": "#e5e7eb",
+        "shadow_color": "#0000000d",
+        "section_bg": "#080303",
+        "show_view_all": false,
+        "view_all_text": "View All FAQs",
+        "view_all_link": "",
+        "btn_bg": "#0a0a0a",
+        "btn_text": "#ffffff",
+        "btn_radius": 30,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_sides": 20,
+        "allow_multiple": false,
+        "open_first": false
+      }
+    },
+    "1622521896cc75a02a": {
+      "type": "icon-box",
+      "blocks": {
+        "1622521896cc75a02a-1": {
+          "type": "iconbox",
+          "settings": {
+            "image": "shopify://shop_images/Asset_1_1.svg",
+            "image_by_url": "",
+            "title": "ENVÍO RÁPIDO Y CONFIABLE",
+            "description": "<p>Procesamos los pedidos rápidamente y garantizamos una entrega segura hasta tu puerta.</p>",
+            "link": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-link",
+            "button_size": ""
+          }
+        },
+        "1622521896cc75a02a-2": {
+          "type": "iconbox",
+          "settings": {
+            "image": "shopify://shop_images/Asset_2.svg",
+            "image_by_url": "",
+            "title": "PAGOS SEGUROS Y FLEXIBLES",
+            "description": "<p>Tus pagos están protegidos con sistemas de pago confiables y encriptados.</p>",
+            "link": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-link",
+            "button_size": ""
+          }
+        },
+        "a92f4695-c66b-47d3-a317-7125f4e8d242": {
+          "type": "iconbox",
+          "settings": {
+            "image": "shopify://shop_images/product-return_1.png",
+            "image_by_url": "",
+            "title": "GARANTÍA DE SATISFACCIÓN",
+            "description": "<p>Compra con confianza. Respaldamos la calidad de nuestros productos.</p>",
+            "link": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-link",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "1622521896cc75a02a-1",
+        "1622521896cc75a02a-2",
+        "a92f4695-c66b-47d3-a317-7125f4e8d242"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "left",
+        "container": "container",
+        "background_color": "rgba(0,0,0,0)",
+        "item_per_row": 3,
+        "item_gap": 30,
+        "item_gap_mobile": 16,
+        "card_style": "vertical",
+        "image_max_width": "90px",
+        "content_alignment": "center",
+        "hover_effect": "none",
+        "enable_slider": false,
+        "show_pagination": true,
+        "show_navigation": false,
+        "use_scroll_mobile": false,
+        "use_grid_column_mb": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "sf__index-icon-box-2"
+      }
+    },
+    "image_with_text_3nCXay": {
+      "type": "image-with-text",
+      "disabled": true,
+      "name": "Image with text",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "container": "container-fluid",
+        "background_color": "rgba(0,0,0,0)",
+        "item_gap": 100,
+        "item_gap_mobile": 30,
+        "image": "shopify://shop_images/WhatsAppImage2026-03-05at6.00.31PM_2.jpg",
+        "link": "shopify://products/munequeras-profesionales-milcosas-fitness-soporte-ajustable-para-levantamiento-de-pesas-proteccion-antideslizante-premium-1",
+        "layout": "left",
+        "image_column_size": "6",
+        "hover_effect": false,
+        "title": "Image with text",
+        "sub_title": "",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+        "text_size": "medium",
+        "content_alignment": "left",
+        "button_label": "Shop Collection",
+        "button_link": "",
+        "button_style": "sf__btn-link",
+        "button_size": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "video_hero_YCXxcj",
+    "16363603444aee9960",
+    "162252047554676bc9",
+    "new_featured_product_t7mPfR",
+    "16363624673307470a",
+    "16225208417f633bd7",
+    "new_featured_product_HmHJAq",
+    "16363652651c1a7c52",
+    "16363653089f0b6a2b",
+    "featured_collection_KKKRTL",
+    "custumer_reviews_WfW76w",
+    "custom_faq_BkeWfw",
+    "1622521896cc75a02a",
+    "image_with_text_3nCXay"
+  ]
+}

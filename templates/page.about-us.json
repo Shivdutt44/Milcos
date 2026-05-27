@@ -1,0 +1,614 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "newsletter_79JQjU": {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "settings": {
+        "container": "w-full",
+        "background_color": "",
+        "form_layout": "vertical",
+        "form_design": "1",
+        "heading": "Manténte al día con los últimos productos fitness, suplementos y ofertas exclusivas.",
+        "description": "",
+        "email_placeholder": "Enter your email",
+        "submit_button": "Subscribe",
+        "text_color": "black",
+        "show_icon": true,
+        "icon_img_width": "30",
+        "show_agreement": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "custom_content_BQ9bKw": {
+      "type": "custom-content",
+      "blocks": {
+        "text_4nXDND": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "Talk about your brand",
+            "subheading": "",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "black",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "block_custom_class": ""
+          }
+        },
+        "image_MHGQiT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/about-uss_1.png",
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_4nXDND",
+        "image_MHGQiT"
+      ],
+      "name": "Custom content",
+      "settings": {
+        "heading": "Sobre Tienda Mil Cosas",
+        "subheading": "Apoyando Tu Camino Fitness",
+        "description": "Descubre cómo Tienda Mil Cosas se compromete a ayudarte a alcanzar tus objetivos de fitness con equipo de calidad, suplementos y ropa deportiva.",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "",
+        "gap": 30,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "padding_top": 48,
+        "padding_bottom": 46,
+        "custom_class": ""
+      }
+    },
+    "main": {
+      "type": "page-about-us",
+      "disabled": true,
+      "settings": {}
+    },
+    "icon-box": {
+      "type": "icon-box",
+      "blocks": {
+        "c8a16382-6620-4bcf-ba3e-1bb9d69d5b77": {
+          "type": "iconbox",
+          "settings": {
+            "image": "shopify://shop_images/Asset_1_1.svg",
+            "image_by_url": "",
+            "title": "Productos de Calidad",
+            "description": "<p>Equipos de fitness y suplementos cuidadosamente seleccionados que cumplen con los más altos estándares de calidad y rendimiento.</p>",
+            "link": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "sf__btn-large"
+          }
+        },
+        "13184979-bd7f-482c-865f-60738819a029": {
+          "type": "iconbox",
+          "settings": {
+            "image": "shopify://shop_images/Asset_2.svg",
+            "image_by_url": "",
+            "title": "Soporte Experto",
+            "description": "<p>Nuestro equipo se dedica a ayudarte a encontrar los productos correctos para tus objetivos de fitness y responder cualquier pregunta.</p>",
+            "link": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-link",
+            "button_size": ""
+          }
+        },
+        "c4cf2072-efce-4cb9-b184-14404b61e2a3": {
+          "type": "iconbox",
+          "settings": {
+            "image": "shopify://shop_images/asset-3.svg",
+            "image_by_url": "",
+            "title": "Envíos Rápidos",
+            "description": "<p>Entrega rápida y confiable para que puedas comenzar tu camino de fitness sin demoras.</p>",
+            "link": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-link",
+            "button_size": ""
+          }
+        },
+        "8e15d521-c62b-4552-a64a-94ead24641e5": {
+          "type": "iconbox",
+          "settings": {
+            "image": "shopify://shop_images/secure-video-clip-black-icon_1.svg",
+            "image_by_url": "",
+            "title": "Compra Segura",
+            "description": "<p>Procesamiento de pagos seguro con múltiples opciones de pago para tu comodidad.</p>",
+            "link": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-link",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "c8a16382-6620-4bcf-ba3e-1bb9d69d5b77",
+        "13184979-bd7f-482c-865f-60738819a029",
+        "c4cf2072-efce-4cb9-b184-14404b61e2a3",
+        "8e15d521-c62b-4552-a64a-94ead24641e5"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Por Qué Importa el Fitness",
+        "subheading": "Apoyando Tus Objetivos de Salud y Rendimiento",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "#000000",
+        "item_per_row": 4,
+        "item_gap": 30,
+        "item_gap_mobile": 10,
+        "card_style": "vertical",
+        "image_max_width": "100px",
+        "content_alignment": "center",
+        "hover_effect": "scaling-down",
+        "enable_slider": false,
+        "show_pagination": false,
+        "show_navigation": false,
+        "use_scroll_mobile": false,
+        "use_grid_column_mb": false,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "custom_class": "sf__page-about"
+      }
+    },
+    "custom_content_R98ajg": {
+      "type": "custom-content",
+      "blocks": {
+        "text_4wCKi9": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p>El fitness es más que una rutina; es un estilo de vida construido sobre disciplina, progreso y crecimiento personal. En Tienda Mil Cosas, nuestro objetivo es apoyar ese camino proporcionando productos que te ayuden a rendir al máximo cada día.</p>",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "white",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "block_custom_class": ""
+          }
+        },
+        "image_tB74qb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/S53cbd5b19bf24cc0bfe1441c635ad899Y_978ebb30-4a41-4ff0-93c6-069c43e2de12.webp",
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_4wCKi9",
+        "image_tB74qb"
+      ],
+      "name": "Custom content",
+      "settings": {
+        "heading": "Apoyando Tu Camino Fitness",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "",
+        "gap": 30,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "padding_top": 48,
+        "padding_bottom": 50,
+        "custom_class": ""
+      }
+    },
+    "custom_content_bmjfke": {
+      "type": "custom-content",
+      "blocks": {
+        "text_yL7GB9": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p><strong>✓ Productos Fitness Cuidadosamente Seleccionados</strong><br/>Cada artículo se elige por su calidad, durabilidad y rendimiento en fitness.</p><p><strong>✓ Pago en Línea Seguro y Fácil</strong><br/>Procesamiento de pagos seguro con múltiples opciones de pago.</p><p><strong>✓ Procesamiento de Pedidos Confiable</strong><br/>Envíos rápidos y confiables a tu puerta.</p><p><strong>✓ Atención al Cliente Dedicada</strong><br/>Estamos aquí para ayudarte con cualquier pregunta o necesidad.</p><p>Entendemos que elegir productos fitness en línea requiere confianza. Por eso nos enfocamos en ofrecer una experiencia de compra confiable de principio a fin.</p>",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "white",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "block_custom_class": ""
+          }
+        },
+        "image_yXRVTg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG-4142.jpg",
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_yL7GB9",
+        "image_yXRVTg"
+      ],
+      "name": "Custom content",
+      "settings": {
+        "heading": "Por Qué Elegirnos",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "",
+        "gap": 30,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "custom_class": ""
+      }
+    },
+    "custom_content_6pAjPm": {
+      "type": "custom-content",
+      "blocks": {
+        "text_Kyt94R": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p><strong>Equipo Fitness</strong><br/>Soluciones de entrenamiento para casa y gimnasio diseñadas para fuerza, resistencia y rendimiento general.</p><p><strong>Suplementos de Rendimiento</strong><br/>Nutrición de calidad para apoyar tus entrenamientos, recuperación y objetivos de fitness.</p><p><strong>Ropa Deportiva</strong><br/>Prendas cómodas y duraderas diseñadas para movimiento, comodidad y rendimiento.</p><p><strong>Accesorios de Entrenamiento</strong><br/>Todo lo que necesitas para mejorar tu experiencia de fitness y alcanzar tus metas.</p><p>Seleccionamos cuidadosamente productos diseñados para apoyar fuerza, resistencia, recuperación y rendimiento diario. Nuestro objetivo es proporcionar productos que combinen calidad, durabilidad y funcionalidad.</p>",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "white",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "block_custom_class": ""
+          }
+        },
+        "image_73tb3H": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/S99b12995296940aa998cf72c38648eecs_623faaf0-1e0d-45e4-bc66-c0d6396c373d.webp",
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_Kyt94R",
+        "image_73tb3H"
+      ],
+      "name": "Custom content",
+      "settings": {
+        "heading": "Lo Que Ofrecemos",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "",
+        "gap": 30,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "custom_class": ""
+      }
+    },
+    "custom_content_Wgp8ac": {
+      "type": "custom-content",
+      "blocks": {
+        "text_yMxcJX": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p>En Tienda Mil Cosas, nuestra misión es simple: ayudar a las personas a alcanzar sus objetivos fitness con equipo confiable, suplementos de calidad y ropa deportiva enfocada en el rendimiento. Ya sea que estés comenzando tu viaje fitness o avanzando hacia nuevos récords personales, creemos que el equipo y la nutrición adecuados pueden marcar la diferencia.</p>",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "white",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "block_custom_class": ""
+          }
+        },
+        "image_jP4EBw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/egrk_1.png",
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_yMxcJX",
+        "image_jP4EBw"
+      ],
+      "name": "Custom content",
+      "settings": {
+        "heading": "Nuestra Misión",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "",
+        "gap": 30,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "custom_class": ""
+      }
+    },
+    "custom_content_wjgi68": {
+      "type": "custom-content",
+      "blocks": {
+        "text_8J73tV": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p>El fitness es más que una rutina; es un estilo de vida construido sobre disciplina, progreso y crecimiento personal. En Tienda Mil Cosas, nuestro objetivo es apoyar ese camino proporcionando productos que te ayuden a rendir al máximo cada día.</p>",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "white",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "block_custom_class": ""
+          }
+        },
+        "image_3LRLEJ": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_8J73tV",
+        "image_3LRLEJ"
+      ],
+      "disabled": true,
+      "name": "Custom content",
+      "settings": {
+        "heading": "Apoyando Tu Camino Fitness",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "",
+        "gap": 30,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "custom_class": ""
+      }
+    },
+    "custom_content_p3Xtp6": {
+      "type": "custom-content",
+      "blocks": {
+        "text_7EwQcP": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p><strong>✓ Productos Fitness Cuidadosamente Seleccionados</strong><br/>Cada artículo se elige por su calidad, durabilidad y rendimiento en fitness.</p><p><strong>✓ Pago en Línea Seguro y Fácil</strong><br/>Procesamiento de pagos seguro con múltiples opciones de pago.</p><p><strong>✓ Procesamiento de Pedidos Confiable</strong><br/>Envíos rápidos y confiables a tu puerta.</p><p><strong>✓ Atención al Cliente Dedicada</strong><br/>Estamos aquí para ayudarte con cualquier pregunta o necesidad.</p><p>Entendemos que elegir productos fitness en línea requiere confianza. Por eso nos enfocamos en ofrecer una experiencia de compra confiable de principio a fin.</p>",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "white",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "block_custom_class": ""
+          }
+        },
+        "image_kq9eH6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG-4142.jpg",
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_7EwQcP",
+        "image_kq9eH6"
+      ],
+      "disabled": true,
+      "name": "Custom content",
+      "settings": {
+        "heading": "Por Qué Elegirnos",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "",
+        "gap": 30,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "custom_class": ""
+      }
+    },
+    "custom_content_W6hXEQ": {
+      "type": "custom-content",
+      "blocks": {
+        "text_ngGRGb": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p><strong>Equipo Fitness</strong><br/>Soluciones de entrenamiento para casa y gimnasio diseñadas para fuerza, resistencia y rendimiento general.</p><p><strong>Suplementos de Rendimiento</strong><br/>Nutrición de calidad para apoyar tus entrenamientos, recuperación y objetivos de fitness.</p><p><strong>Ropa Deportiva</strong><br/>Prendas cómodas y duraderas diseñadas para movimiento, comodidad y rendimiento.</p><p><strong>Accesorios de Entrenamiento</strong><br/>Todo lo que necesitas para mejorar tu experiencia de fitness y alcanzar tus metas.</p><p>Seleccionamos cuidadosamente productos diseñados para apoyar fuerza, resistencia, recuperación y rendimiento diario. Nuestro objetivo es proporcionar productos que combinen calidad, durabilidad y funcionalidad.</p>",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "white",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "block_custom_class": ""
+          }
+        },
+        "image_gfc6HG": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_ngGRGb",
+        "image_gfc6HG"
+      ],
+      "disabled": true,
+      "name": "Custom content",
+      "settings": {
+        "heading": "Lo Que Ofrecemos",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "",
+        "gap": 30,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "custom_class": ""
+      }
+    },
+    "custom_content_GP9bYx": {
+      "type": "custom-content",
+      "blocks": {
+        "text_4amYYi": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "text": "<p>En Tienda Mil Cosas, nuestra misión es simple: ayudar a las personas a alcanzar sus objetivos fitness con equipo confiable, suplementos de calidad y ropa deportiva enfocada en el rendimiento. Ya sea que estés comenzando tu viaje fitness o avanzando hacia nuevos récords personales, creemos que el equipo y la nutrición adecuados pueden marcar la diferencia.</p>",
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "left",
+            "text_size": "medium",
+            "text_color": "white",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-primary",
+            "button_size": "",
+            "block_custom_class": ""
+          }
+        },
+        "image_WyXnyV": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center",
+            "block_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_4amYYi",
+        "image_WyXnyV"
+      ],
+      "disabled": true,
+      "name": "Custom content",
+      "settings": {
+        "heading": "Nuestra Misión",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "background_color": "",
+        "gap": 30,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "custom_class": ""
+      }
+    }
+  },
+  "order": [
+    "newsletter_79JQjU",
+    "custom_content_BQ9bKw",
+    "main",
+    "icon-box",
+    "custom_content_R98ajg",
+    "custom_content_bmjfke",
+    "custom_content_6pAjPm",
+    "custom_content_Wgp8ac",
+    "custom_content_wjgi68",
+    "custom_content_p3Xtp6",
+    "custom_content_W6hXEQ",
+    "custom_content_GP9bYx"
+  ]
+}
