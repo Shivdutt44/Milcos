@@ -508,36 +508,11 @@
 </section>
 
 <script>
-// Set header height
-function _shh() {
-  if (!_mh || !_dh) {
-    _mh = document.querySelector('header.sf-header__mobile');
-    _dh = document.querySelector('header.sf-header__desktop');
-  }
-  // Header
-  var _hd = window.innerWidth < 1024 ? _mh : _dh;
-  if (_hd) {
-    document.documentElement.style.setProperty('--sf-header-height', _hd.offsetHeight + 'px');
-    window.MinimogSettings.headerHeight = _hd.offsetHeight;
-  }
-}
-
-// setMainContentPadding
-function _smcp() {
-  // pageTemplate
-  var _pt = document.documentElement.dataset.template;
-  if (window.innerWidth >= 1024) {
-    if (_dh && _dh.dataset.transparent === "true") {
-      if (_pt === 'index' || _pt === 'collection') {
-        document.documentElement.style.setProperty('--main-content-padding-top', '0px');
-      }
-    }
-  } else {
-    document.documentElement.style.removeProperty('--main-content-padding-top');
-  }
-}
-_shh();
-_smcp();
+/* Header height set in critical-scripts.liquid — re-run here after section render */
+try {
+  if (typeof _shh === 'function') _shh();
+  if (typeof _smcp === 'function') _smcp();
+} catch(e){}
 </script>
 
 {% schema %}

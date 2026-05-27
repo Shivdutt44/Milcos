@@ -93,7 +93,8 @@
     {%- endif -%}
   {%- when 'instagram' -%}
     {%- if settings.instagram_token != blank -%}
-    {{ 'instagram.css' | asset_url | stylesheet_tag }}
+    <link rel="preload" href="{{ 'instagram.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>{{ 'instagram.css' | asset_url | stylesheet_tag }}</noscript>
     <script src="{{ 'aside-instagram.min.js' | asset_url }}" defer="defer"></script>
     <div class="sf-block-aside">
       <h3 class="sf-aside-title">{{ b_s.title }}</h3>

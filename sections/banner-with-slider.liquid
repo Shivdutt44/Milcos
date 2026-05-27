@@ -1,5 +1,7 @@
-{{ 'slideshow.css' | asset_url | stylesheet_tag }}
-{{ 'banner-with-slider.css' | asset_url | stylesheet_tag }}
+<link rel="preload" href="{{ 'slideshow.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>{{ 'slideshow.css' | asset_url | stylesheet_tag }}</noscript>
+<link rel="preload" href="{{ 'banner-with-slider.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>{{ 'banner-with-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
 {% liquid
   assign bg_color = section.settings.background_color

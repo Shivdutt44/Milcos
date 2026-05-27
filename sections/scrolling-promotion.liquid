@@ -1,4 +1,5 @@
-{{ 'scrolling-promotion.css' | asset_url | stylesheet_tag }}
+<link rel="preload" href="{{ 'scrolling-promotion.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>{{ 'scrolling-promotion.css' | asset_url | stylesheet_tag }}</noscript>
 <m-scrolling-promotion
   class="sf-section-padding m-scrolling-promotion m-scrolling-promotion--{{ section.settings.direction }}"
   style="--item-gap: {{ section.settings.item_gap }}px;--item-gap-mobile: {{ section.settings.item_gap_mobile }}px;--bg-color: {{ section.settings.bg_color }};--text-color: {{ section.settings.text_color }};--section-padding-top: {{ section.settings.padding_top }}px;--section-padding-bottom: {{ section.settings.padding_bottom }}px;--duration: {{ section.settings.speed }}s;"

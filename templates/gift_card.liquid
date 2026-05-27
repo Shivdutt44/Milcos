@@ -22,14 +22,16 @@
     <meta name="description" content="{{ 'gift_cards.issued.subtext' | t }}">
 
     {{ content_for_header }}
-    {{ 'theme.css' | asset_url | stylesheet_tag }}
+    <link rel="preload" href="{{ 'theme.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>{{ 'theme.css' | asset_url | stylesheet_tag }}</noscript>
 
     {% render 'font-face' %}
     {% render 'critical-scripts' %}
     {% render 'style-tags' %}
     {% render 'critical-css' %}
 
-    {{ 'template-giftcard.css' | asset_url | stylesheet_tag }}
+    <link rel="preload" href="{{ 'template-giftcard.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>{{ 'template-giftcard.css' | asset_url | stylesheet_tag }}</noscript>
 
   </head>
 

@@ -149,16 +149,21 @@
   {{ style | strip_newlines }}
 {%- endstyle -%}
 
-{% comment %} {%- if template.name == "product" -%}
-<link media="print" onload="this.media = 'all'" rel="stylesheet" href="{{ 'product-template.css' | asset_url }}">
+{% comment %} Deferred template-specific CSS — load asynchronously {% endcomment %}
+{%- if template.name == "product" -%}
+<link rel="preload" href="{{ 'product-template.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ 'product-template.css' | asset_url }}"></noscript>
 {%- endif -%}
 {%- if template.name == "collection" or template.name == 'list-collections' or template.name == 'search' -%}
-<link media="print" onload="this.media = 'all'" rel="stylesheet" href="{{ 'collection.css' | asset_url }}">
-{%- endif -%} {% endcomment %}
+<link rel="preload" href="{{ 'collection.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ 'collection.css' | asset_url }}"></noscript>
+{%- endif -%}
 
-{{ 'custom.css' | asset_url | stylesheet_tag }}
+<link rel="preload" href="{{ 'custom.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>{{ 'custom.css' | asset_url | stylesheet_tag }}</noscript>
 {% if settings.enable_rtl %}
-  {{ 'rtl.css' | asset_url | stylesheet_tag }}
+  <link rel="preload" href="{{ 'rtl.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>{{ 'rtl.css' | asset_url | stylesheet_tag }}</noscript>
 {% endif %}
 
 {%- style -%}

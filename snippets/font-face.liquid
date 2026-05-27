@@ -21,7 +21,9 @@
 
 {%- unless use_custom_font_body or settings.type_base_font.system? -%}
   <link rel="preload" as="font" href="{{ base_font | font_url }}" type="font/woff2" crossorigin>
+  {%- if base_font_bold -%}
   <link rel="preload" as="font" href="{{ base_font_bold | font_url }}" type="font/woff2" crossorigin>
+  {%- endif -%}
 {%- endunless -%}
 
 {%- unless use_custom_font_heading or settings.type_header_font.system? -%}

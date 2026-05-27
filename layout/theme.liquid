@@ -26,22 +26,6 @@ template-{{ template.name | handle }} {{ template.name }}-{{ template.suffix }} 
   {% endif %}
 >
   <head>
-    <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "wk6mfywz5j");
-</script>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QXZ0NWT2C5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QXZ0NWT2C5');
-</script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
@@ -54,21 +38,53 @@ template-{{ template.name | handle }} {{ template.name }}-{{ template.suffix }} 
       render 'font-face'
     -%}
 
+    {{ content_for_header }}
+
     {% render 'critical-css' %}
     {% render 'critical-scripts' %}
     {% render 'custom-code-head' %}
 
-    {{ 'custom.css' | asset_url | stylesheet_tag }}
-
-    {{ 'theme.css' | asset_url | stylesheet_tag }}
-    {{ 'chunk.css' | asset_url | stylesheet_tag }}
+    {% comment %}Defer non-critical CSS — load async, not render-blocking{% endcomment %}
+    <link rel="preload" href="{{ 'theme.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ 'theme.css' | asset_url }}"></noscript>
+    <link rel="preload" href="{{ 'chunk.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ 'chunk.css' | asset_url }}"></noscript>
 
     {% render 'style-tags' %}
 
+    {% comment %}Defer critical JS but load early enough for interactivity{% endcomment %}
     <script src="{{ 'theme-global.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'app.min.js' | asset_url }}" defer="defer"></script>
 
-    {{ content_for_header }}    
+    {% comment %}Delayed third-party scripts — loaded after page load to reduce blocking{% endcomment %}
+    <script>
+      window._delayThirdParty = function() {
+        if (window._thirdPartyLoaded) return;
+        window._thirdPartyLoaded = true;
+        // Microsoft Clarity
+        (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "wk6mfywz5j");
+
+        // Google Analytics (gtag)
+        var gas = document.createElement('script');
+        gas.async = true;
+        gas.src = 'https://www.googletagmanager.com/gtag/js?id=G-QXZ0NWT2C5';
+        document.head.appendChild(gas);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-QXZ0NWT2C5');
+      };
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(window._delayThirdParty, { timeout: 2000 });
+      } else {
+        setTimeout(window._delayThirdParty, 2000);
+      }
+      window.addEventListener('scroll', function() { window._delayThirdParty(); }, { once: true, passive: true });
+    </script>
   </head>
 
   <body
@@ -98,6 +114,7 @@ template-{{ template.name | handle }} {{ template.name }}-{{ template.suffix }} 
     {% render 'script-tags' %}
     {% render 'cookie-banner' %}
     
+    {% comment %}Defer non-essential JS module loading until after interactive{% endcomment %}
     <script src="{{ 'foxkit-app.min.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'quick-view.min.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'product-card-swatch.min.js' | asset_url }}" defer="defer"></script>

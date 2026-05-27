@@ -1,5 +1,6 @@
 <script src="{{ 'product.min.js' | asset_url }}" defer="defer"></script>
-{{ 'product-template.css' | asset_url | stylesheet_tag }}
+<link rel="preload" href="{{ 'product-template.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>{{ 'product-template.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- liquid
   assign container = section.settings.container
