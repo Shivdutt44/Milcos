@@ -1,4 +1,4 @@
-<link rel="preload" as="style" href="{{ 'collection.css' | asset_url }}" onload="__as(this)">
+﻿<link rel="stylesheet" href="{{ 'collection.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
 <noscript>{{ 'collection.css' | asset_url | stylesheet_tag }}</noscript>
 
 {% assign settings = section.settings %}

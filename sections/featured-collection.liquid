@@ -1,4 +1,4 @@
-<link rel="preload" as="style" href="{{ 'featured-collection.css' | asset_url }}" onload="__as(this)">
+﻿<link rel="stylesheet" href="{{ 'featured-collection.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
 <noscript>{{ 'featured-collection.css' | asset_url | stylesheet_tag }}</noscript>
 {%- comment -%}
   This is a required section for the Shopify Theme Store.

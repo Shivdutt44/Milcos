@@ -1,4 +1,4 @@
-<link rel="preload" as="style" href="{{ 'scrolling-promotion.css' | asset_url }}" onload="__as(this)">
+﻿<link rel="stylesheet" href="{{ 'scrolling-promotion.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
 <noscript>{{ 'scrolling-promotion.css' | asset_url | stylesheet_tag }}</noscript>
 <m-scrolling-promotion
   class="sf-section-padding m-scrolling-promotion m-scrolling-promotion--{{ section.settings.direction }}"

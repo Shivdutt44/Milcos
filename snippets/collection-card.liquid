@@ -1,4 +1,4 @@
-<link rel="preload" as="style" href="{{ 'component-collection-card.css' | asset_url }}" onload="__as(this)">
+﻿<link rel="stylesheet" href="{{ 'component-collection-card.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
 <noscript>{{ 'component-collection-card.css' | asset_url | stylesheet_tag }}</noscript>
 
 <div class="sf-column{% if enable_slider %} swiper-slide{% endif %}">

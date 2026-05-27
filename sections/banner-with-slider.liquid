@@ -1,6 +1,6 @@
-<link rel="preload" as="style" href="{{ 'slideshow.css' | asset_url }}" onload="__as(this)">
+﻿<link rel="stylesheet" href="{{ 'slideshow.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
 <noscript>{{ 'slideshow.css' | asset_url | stylesheet_tag }}</noscript>
-<link rel="preload" as="style" href="{{ 'banner-with-slider.css' | asset_url }}" onload="__as(this)">
+<link rel="stylesheet" href="{{ 'banner-with-slider.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
 <noscript>{{ 'banner-with-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
 {% liquid

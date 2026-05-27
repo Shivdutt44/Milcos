@@ -1,5 +1,5 @@
-<script src="{{ 'product.min.js' | asset_url }}" defer="defer"></script>
-<link rel="preload" as="style" href="{{ 'product-template.css' | asset_url }}" onload="__as(this)">
+﻿<script src="{{ 'product.min.js' | asset_url }}" defer="defer"></script>
+<link rel="stylesheet" href="{{ 'product-template.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
 <noscript>{{ 'product-template.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- liquid

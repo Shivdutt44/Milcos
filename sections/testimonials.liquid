@@ -1,4 +1,4 @@
-<link rel="preload" as="style" href="{{ 'testimonials.css' | asset_url }}" onload="__as(this)">
+﻿<link rel="stylesheet" href="{{ 'testimonials.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
 <noscript>{{ 'testimonials.css' | asset_url | stylesheet_tag }}</noscript>
 
 {% liquid

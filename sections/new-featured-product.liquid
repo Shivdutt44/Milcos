@@ -1,6 +1,6 @@
-<link rel="preload" as="style" href="{{ 'product.css' | asset_url }}" onload="__as(this)">
+﻿<link rel="stylesheet" href="{{ 'product.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
 <noscript>{{ 'product.css' | asset_url | stylesheet_tag }}</noscript>
-<link rel="preload" as="style" href="{{ 'featured-product.css' | asset_url }}" onload="__as(this)">
+<link rel="stylesheet" href="{{ 'featured-product.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
 <noscript>{{ 'featured-product.css' | asset_url | stylesheet_tag }}</noscript>
 {%- liquid
   assign product = all_products[section.settings.featured_product]

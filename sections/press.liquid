@@ -1,4 +1,4 @@
-<link rel="preload" as="style" href="{{ 'press.css' | asset_url }}" onload="__as(this)">
+﻿<link rel="stylesheet" href="{{ 'press.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
 <noscript>{{ 'press.css' | asset_url | stylesheet_tag }}</noscript>
 {% liquid
   assign settings = section.settings

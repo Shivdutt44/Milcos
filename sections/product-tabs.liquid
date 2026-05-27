@@ -1,4 +1,4 @@
-<link rel="preload" as="style" href="{{ 'product-tabs.css' | asset_url }}" onload="__as(this)">
+﻿<link rel="stylesheet" href="{{ 'product-tabs.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
 <noscript>{{ 'product-tabs.css' | asset_url | stylesheet_tag }}</noscript>
 <script src="{{ 'product-tabs.min.js' | asset_url }}" defer="defer"></script>
 {%- liquid 

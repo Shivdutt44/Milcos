@@ -1,4 +1,4 @@
-<link rel="preload" as="style" href="{{ 'custom-content.css' | asset_url }}" onload="__as(this)">
+﻿<link rel="stylesheet" href="{{ 'custom-content.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
 <noscript>{{ 'custom-content.css' | asset_url | stylesheet_tag }}</noscript>
 {% style %}
   .product-form__actions {
@@ -98,7 +98,7 @@
                                     {% endif %}
                                 </div>
                             {% when 'video' %}
-                                <link rel="preload" as="style" href="{{ 'video.css' | asset_url }}" onload="__as(this)">
+                                <link rel="stylesheet" href="{{ 'video.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
                                 <noscript>{{ 'video.css' | asset_url | stylesheet_tag }}</noscript>
                                 {% liquid
                                   assign autoplay = false
@@ -207,7 +207,7 @@
                                     </div>
                                 {% endif %}
                             {% when 'product_form' %}
-                                <link rel="preload" as="style" href="{{ 'product.css' | asset_url }}" onload="__as(this)">
+                                <link rel="stylesheet" href="{{ 'product.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
                                 <noscript>{{ 'product.css' | asset_url | stylesheet_tag }}</noscript>
                                 {% liquid
                                   assign product = all_products[block.settings.product]

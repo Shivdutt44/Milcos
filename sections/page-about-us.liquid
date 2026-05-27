@@ -1,4 +1,4 @@
-<link rel="preload" as="style" href="{{ 'about-us.css' | asset_url }}" onload="__as(this)">
+﻿<link rel="stylesheet" href="{{ 'about-us.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
 <noscript>{{ 'about-us.css' | asset_url | stylesheet_tag }}</noscript>
 <div class="sf__page-about">
   {% render 'page-title', title: page.title, container: true %}

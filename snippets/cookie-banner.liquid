@@ -1,4 +1,4 @@
-{% liquid
+﻿{% liquid
   assign show_cookie_consent = settings.show_cookie_consent
   assign cookie_consent_message = settings.cookie_consent_message
   assign cookie_consent_allow = settings.cookie_consent_allow
@@ -17,7 +17,7 @@
 %}
 
 {% if should_show %}
-<link rel="preload" as="style" href="{{ 'cookie-banner.css' | asset_url }}" onload="__as(this)">
+<link rel="stylesheet" href="{{ 'cookie-banner.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
 <noscript>{{ 'cookie-banner.css' | asset_url | stylesheet_tag }}</noscript>
 <div id="m-cookie-banner" class="m-cookie-banner m-cookie-banner--{{ cookie_consent_placement }} m-cookie-banner--{{ cookie_consent_theme }}" {% if cookie_design_mode and request.design_mode %}style="display: flex;"{% endif %}>
   {% if cookie_consent_message != blank %}

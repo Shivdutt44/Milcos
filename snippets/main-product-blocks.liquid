@@ -1,4 +1,4 @@
-{% liquid
+﻿{% liquid
   assign selected_variant = product.selected_or_first_available_variant
   assign size_title = 'size'
   assign product_form_id = 'product-form-' | append: section.id
@@ -578,7 +578,7 @@
                   assign hiddenClass = hiddenClass | append: 'hide-wishlist '
                 endunless
               -%}
-              <link rel="preload" as="style" href="{{ 'product-complementary.css' | asset_url }}" onload="__as(this)">
+              <link rel="stylesheet" href="{{ 'product-complementary.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
 <noscript>{{ 'product-complementary.css' | asset_url | stylesheet_tag }}</noscript>
               <product-recommendations
                 class="sf-complementary-products {{ hiddenClass }} {% if block.settings.make_collapsible_row %}show_as_collapsible{% endif %}"
