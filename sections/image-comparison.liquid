@@ -1,5 +1,4 @@
-﻿<link rel="stylesheet" href="{{ 'image-comparison.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
-<noscript>{{ 'image-comparison.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'image-comparison.css' | asset_url | stylesheet_tag }}
 {% liquid
 	assign container = section.settings.container
 	assign section_id = section.settings.custom_id | default: section.id

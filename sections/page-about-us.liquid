@@ -1,5 +1,4 @@
-﻿<link rel="stylesheet" href="{{ 'about-us.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
-<noscript>{{ 'about-us.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'about-us.css' | asset_url | stylesheet_tag }}
 <div class="sf__page-about">
   {% render 'page-title', title: page.title, container: true %}
 </div>

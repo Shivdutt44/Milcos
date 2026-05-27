@@ -1,12 +1,11 @@
-﻿{%- comment -%}
+{%- comment -%}
     Developed By -  BOOST STAR Experts
     Note : Please DO NOT copy in any form. Any act of copying will be pursued and held responsible under the law.
 {%- endcomment -%}
 
 
-<link rel="stylesheet" href="{{ 'splide.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
-<noscript>{{ 'splide.css' | asset_url | stylesheet_tag }}</noscript>
-<script src="{{ 'splide.js' | asset_url }}" defer="defer"></script>
+{{ 'splide.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'splide.js' | asset_url }}"></script>
 
 
 {% capture css %}
@@ -360,10 +359,9 @@
 
  {{ html | strip_newlines }}
 
-  <script src="{{ 'splide.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'splide.js' | asset_url }}"></script>
 
-<link rel="stylesheet" href="{{ 'splide.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
-<noscript>{{ 'splide.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'splide.css' | asset_url | stylesheet_tag }}
 
     
 <script>

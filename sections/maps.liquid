@@ -1,5 +1,4 @@
-﻿<link rel="stylesheet" href="{{ 'g-maps.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
-<noscript>{{ 'g-maps.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'g-maps.css' | asset_url | stylesheet_tag }}
 {%- assign st = section.settings -%}
 <section data-section-type="google-maps" data-section-id="{{ section.id }}">
   <div class="{{ section.settings.container }}">

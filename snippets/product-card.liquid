@@ -1,5 +1,4 @@
-﻿<link rel="stylesheet" href="{{ 'component-product-card.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
-<noscript>{{ 'component-product-card.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'component-product-card.css' | asset_url | stylesheet_tag }}
 
 {% liquid
   if card_style == nil or card_style == blank

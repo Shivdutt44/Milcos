@@ -1,5 +1,4 @@
-﻿<link rel="stylesheet" href="{{ 'featured-slider.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
-<noscript>{{ 'featured-slider.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'featured-slider.css' | asset_url | stylesheet_tag }}
 {%- liquid
   assign bg_color = section.settings.background_color
   assign has_bg = false

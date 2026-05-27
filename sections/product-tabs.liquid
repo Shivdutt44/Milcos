@@ -1,5 +1,4 @@
-﻿<link rel="stylesheet" href="{{ 'product-tabs.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
-<noscript>{{ 'product-tabs.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'product-tabs.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'product-tabs.min.js' | asset_url }}" defer="defer"></script>
 {%- liquid 
 	assign bg_color = section.settings.background_color

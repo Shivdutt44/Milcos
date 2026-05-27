@@ -1,5 +1,4 @@
-﻿<link rel="stylesheet" href="{{ 'testimonials.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
-<noscript>{{ 'testimonials.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'testimonials.css' | asset_url | stylesheet_tag }}
 
 {% liquid
   assign settings = section.settings

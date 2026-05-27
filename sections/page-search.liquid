@@ -1,5 +1,4 @@
-﻿<link rel="stylesheet" href="{{ 'collection.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
-<noscript>{{ 'collection.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'collection.css' | asset_url | stylesheet_tag }}
 
 {% paginate search.results by section.settings.results_per_page %}
   <section

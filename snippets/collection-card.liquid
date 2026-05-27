@@ -1,5 +1,4 @@
-﻿<link rel="stylesheet" href="{{ 'component-collection-card.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
-<noscript>{{ 'component-collection-card.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'component-collection-card.css' | asset_url | stylesheet_tag }}
 
 <div class="sf-column{% if enable_slider %} swiper-slide{% endif %}">
     <div class="collection-card collection-card--{{ card_style }}{% if hover_effect != 'none' %} collection-card--hover-{{ hover_effect }}{% endif %}">

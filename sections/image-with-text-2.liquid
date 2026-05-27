@@ -1,5 +1,4 @@
-﻿<link rel="stylesheet" href="{{ 'hero.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
-<noscript>{{ 'hero.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'hero.css' | asset_url | stylesheet_tag }}
 
 {% liquid
   assign show_overlay = section.settings.show_overlay

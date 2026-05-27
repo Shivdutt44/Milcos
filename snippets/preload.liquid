@@ -1,26 +1,15 @@
 <link rel="canonical" href="{{ canonical_url }}">
 
+{{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
+{{ 'chunk.css' | asset_url | stylesheet_tag: preload: true }}
+
 {% comment %} Minimog prefetch resources {% endcomment %}
+<link rel="dns-prefetch" href="{{ canonical_url }}" crossorigin>
 <link rel="dns-prefetch" href="https://cdn.shopify.com" crossorigin>
+<link rel="preconnect" href="{{ canonical_url }}" crossorigin>
 <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 
-{% comment %} Analytics CDN preconnects {% endcomment %}
-<link rel="dns-prefetch" href="https://www.googletagmanager.com">
-<link rel="dns-prefetch" href="https://www.google-analytics.com">
-<link rel="dns-prefetch" href="https://www.clarity.ms">
-<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-<link rel="preconnect" href="https://www.clarity.ms" crossorigin>
-
-{% comment %} Non-render-blocking CSS loading — inline helper is defined before preload links for reliability. {% endcomment %}
-<script>function __as(l){l.rel='stylesheet';l.media='all';l.removeAttribute('onload');}</script>
-<link rel="preload" as="style" href="{{ 'theme.css' | asset_url }}" onload="__as(this)">
-<noscript>{{ 'theme.css' | asset_url | stylesheet_tag }}</noscript>
-<link rel="preload" as="style" href="{{ 'chunk.css' | asset_url }}" onload="__as(this)">
-<noscript>{{ 'chunk.css' | asset_url | stylesheet_tag }}</noscript>
-
-{% comment %} Preload critical scripts for faster execution {% endcomment %}
 {{ 'app.min.js' | asset_url | preload_tag: as: 'script' }}
 {{ 'foxkit-app.min.js' | asset_url | preload_tag: as: 'script' }}
 {{ 'product-card-swatch.min.js' | asset_url | preload_tag: as: 'script' }}
-
 {% comment %} End Minimog prefetch resources {% endcomment %}

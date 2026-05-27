@@ -1,5 +1,4 @@
-﻿<link rel="stylesheet" href="{{ 'custom-content.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
-<noscript>{{ 'custom-content.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'custom-content.css' | asset_url | stylesheet_tag }}
 {% style %}
   .product-form__actions {
     margin-top: 30px;
@@ -98,8 +97,7 @@
                                     {% endif %}
                                 </div>
                             {% when 'video' %}
-                                <link rel="stylesheet" href="{{ 'video.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
-                                <noscript>{{ 'video.css' | asset_url | stylesheet_tag }}</noscript>
+                                {{ 'video.css' | asset_url | stylesheet_tag }}
                                 {% liquid
                                   assign autoplay = false
                                   if block.settings.autoplay and block.settings.muted
@@ -207,8 +205,7 @@
                                     </div>
                                 {% endif %}
                             {% when 'product_form' %}
-                                <link rel="stylesheet" href="{{ 'product.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
-                                <noscript>{{ 'product.css' | asset_url | stylesheet_tag }}</noscript>
+                                {{ 'product.css' | asset_url | stylesheet_tag }}
                                 {% liquid
                                   assign product = all_products[block.settings.product]
                                   assign current_variant = product.selected_or_first_available_variant

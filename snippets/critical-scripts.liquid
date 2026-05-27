@@ -66,8 +66,7 @@
 
     // calculateSectionsHeight
     function _csh() {_shh();_stbh();_sah();_smcp();}
-    window.addEventListener('resize', _debounce(_csh, 300), { passive: true });
-    window.addEventListener('DOMContentLoaded', _csh);
+    window.addEventListener('resize', _debounce(_csh, 1000));
 
     document.documentElement.className = document.documentElement.className.replace('supports-no-cookies', 'supports-cookies').replace('no-js', 'js');
   } catch (error) {
@@ -136,76 +135,4 @@
   }
 
   window.__isPSA = __isPSA;
-
-  // Defer non-critical third-party scripts to improve caching and reduce TBT.
-  (function(){
-    var hosts = ['cdn3.hextom.com','hextom.com','loox.io','static.klaviyo.com','shopifypreview.com','connect.facebook.net'];
-    function shouldDefer(src){ if(!src) return false; for (var i=0;i<hosts.length;i++){ if (src.indexOf(hosts[i])>-1) return true; } return false; }
-
-    var deferred = [];
-
-    function captureScript(s){
-      try{
-        if(!s || !s.src) return;
-        if(s.dataset && s.dataset.deferProcessed) return;
-        var src = s.getAttribute('src') || '';
-        if(!shouldDefer(src)) return;
-        s.dataset.deferProcessed = '1';
-        var attrs = { async: s.async, defer: s.defer, type: s.type, id: s.id, crossorigin: s.getAttribute('crossorigin') };
-        var parent = s.parentNode;
-        if(parent) parent.removeChild(s);
-        deferred.push({ src: src, attrs: attrs });
-      }catch(e){console.warn('captureScript', e)}
-    }
-
-    function deferExisting(){
-      var scripts = Array.prototype.slice.call(document.querySelectorAll('script[src]'));
-      scripts.forEach(function(s){ captureScript(s); });
-    }
-
-    function loadDeferred(){
-      if(!deferred.length) return;
-      deferred.forEach(function(item){
-        try{
-          var sc = document.createElement('script');
-          sc.src = item.src;
-          if(item.attrs.crossorigin) sc.setAttribute('crossorigin', item.attrs.crossorigin);
-          if(item.attrs.type) sc.type = item.attrs.type;
-          sc.async = !!item.attrs.async;
-          sc.defer = !!item.attrs.defer;
-          document.body.appendChild(sc);
-        }catch(e){console.warn('loadDeferred', e)}
-      });
-      deferred = [];
-    }
-
-    // Observe newly injected scripts and capture ones we want to defer
-    try{
-      var mo = new MutationObserver(function(muts){
-        muts.forEach(function(m){
-          Array.prototype.slice.call(m.addedNodes||[]).forEach(function(node){
-            if(node && node.tagName === 'SCRIPT' && node.src){
-              captureScript(node);
-            }
-          });
-        });
-      });
-      mo.observe(document.documentElement || document, { childList: true, subtree: true });
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', deferExisting);
-      } else {
-        deferExisting();
-      }
-
-      var events = ['scroll','mousemove','touchstart','keydown','click'];
-      var onInteraction = function(){ try{ mo.disconnect(); }catch(e){}
-        loadDeferred();
-        events.forEach(function(e){ window.removeEventListener(e, onInteraction); });
-      };
-      events.forEach(function(e){ window.addEventListener(e, onInteraction, { once: true, passive: true }); });
-
-      if ('requestIdleCallback' in window) requestIdleCallback(loadDeferred, { timeout: 5000 }); else setTimeout(loadDeferred, 5000);
-    }catch(e){console.warn('defer-third-party', e)}
-  })();
 </script>

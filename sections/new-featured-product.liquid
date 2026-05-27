@@ -1,7 +1,5 @@
-﻿<link rel="stylesheet" href="{{ 'product.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
-<noscript>{{ 'product.css' | asset_url | stylesheet_tag }}</noscript>
-<link rel="stylesheet" href="{{ 'featured-product.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
-<noscript>{{ 'featured-product.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'product.css' | asset_url | stylesheet_tag }}
+{{ 'featured-product.css' | asset_url | stylesheet_tag }}
 {%- liquid
   assign product = all_products[section.settings.featured_product]
   assign first_3d_model = product.media | where: "media_type", "model" | first

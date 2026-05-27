@@ -1,5 +1,4 @@
-﻿<link rel="stylesheet" href="{{ 'press.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
-<noscript>{{ 'press.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'press.css' | asset_url | stylesheet_tag }}
 {% liquid
   assign settings = section.settings
   assign bg_color = section.settings.background_color

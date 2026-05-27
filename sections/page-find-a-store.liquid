@@ -1,5 +1,4 @@
-﻿<link rel="stylesheet" href="{{ 'find-a-store.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
-<noscript>{{ 'find-a-store.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'find-a-store.css' | asset_url | stylesheet_tag }}
 <div class="sf__page-header text-center section__header">
   <h1 class="section__heading">{{ page.title }}</h1>
   {% render 'breadcrumb', justify: 'center' %}

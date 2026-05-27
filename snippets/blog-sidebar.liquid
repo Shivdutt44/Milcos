@@ -1,4 +1,4 @@
-﻿{%- for block in section.blocks -%}
+{%- for block in section.blocks -%}
 {% liquid
   assign b_s = block.settings
 %}
@@ -93,8 +93,7 @@
     {%- endif -%}
   {%- when 'instagram' -%}
     {%- if settings.instagram_token != blank -%}
-    <link rel="stylesheet" href="{{ 'instagram.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
-    <noscript>{{ 'instagram.css' | asset_url | stylesheet_tag }}</noscript>
+    {{ 'instagram.css' | asset_url | stylesheet_tag }}
     <script src="{{ 'aside-instagram.min.js' | asset_url }}" defer="defer"></script>
     <div class="sf-block-aside">
       <h3 class="sf-aside-title">{{ b_s.title }}</h3>

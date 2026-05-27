@@ -25,47 +25,19 @@
     chatbox.setAttribute("page_id", {{ page_id | json }});
     chatbox.setAttribute("attribution", "setup_tool");
 
-    function initFbChat() {
-      if (window.__foxkitFbLoaded) return;
-      window.__foxkitFbLoaded = true;
-
-      window.fbAsyncInit = function() {
+    window.fbAsyncInit = function() {
         FB.init({
-          xfbml: true,
-          version: 'v11.0'
+            xfbml            : true,
+            version          : 'v11.0'
         });
-      };
+    };
 
-      var js = document.createElement('script');
-      js.id = 'facebook-jssdk';
-      js.src = 'https://connect.facebook.net/{{ language }}/sdk/xfbml.customerchat.js';
-      js.async = true;
-      var fjs = document.getElementsByTagName('script')[0];
-      if (fjs) {
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/{{ language }}/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
-      } else {
-        document.head.appendChild(js);
-      }
-    }
-
-    function loadFbChatOnInteraction() {
-      ['scroll', 'mousemove', 'touchstart', 'keydown'].forEach(function(eventName) {
-        window.addEventListener(eventName, initFbChat, { once: true, passive: true });
-      });
-
-      window.addEventListener('visibilitychange', function() {
-        if (document.visibilityState === 'visible') {
-          initFbChat();
-        }
-      }, { passive: true });
-
-      setTimeout(initFbChat, 5000);
-    }
-
-    if (document.readyState === 'complete' || document.readyState === 'interactive') {
-      loadFbChatOnInteraction();
-    } else {
-      window.addEventListener('DOMContentLoaded', loadFbChatOnInteraction);
-    }
+    }(document, 'script', 'facebook-jssdk'));
 </script>
 {% endif %}

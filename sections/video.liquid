@@ -1,5 +1,4 @@
-﻿<link rel="stylesheet" href="{{ 'video.css' | asset_url }}" media="print" onload="this.onload=null;this.media='all'">
-<noscript>{{ 'video.css' | asset_url | stylesheet_tag }}</noscript>
+{{ 'video.css' | asset_url | stylesheet_tag }}
 
 {% liquid
   assign bg_color = section.settings.background_color
