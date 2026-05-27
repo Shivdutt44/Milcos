@@ -1,4 +1,5 @@
-{{ 'video.css' | asset_url | stylesheet_tag }}
+<link rel="preload" as="style" href="{{ 'video.css' | asset_url }}" onload="__as(this)">
+<noscript>{{ 'video.css' | asset_url | stylesheet_tag }}</noscript>
 
 {% liquid
   assign bg_color = section.settings.background_color

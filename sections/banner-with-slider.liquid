@@ -1,5 +1,7 @@
-{{ 'slideshow.css' | asset_url | stylesheet_tag }}
-{{ 'banner-with-slider.css' | asset_url | stylesheet_tag }}
+<link rel="preload" as="style" href="{{ 'slideshow.css' | asset_url }}" onload="__as(this)">
+<noscript>{{ 'slideshow.css' | asset_url | stylesheet_tag }}</noscript>
+<link rel="preload" as="style" href="{{ 'banner-with-slider.css' | asset_url }}" onload="__as(this)">
+<noscript>{{ 'banner-with-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
 {% liquid
   assign bg_color = section.settings.background_color
@@ -55,10 +57,15 @@
                                 assign text_horizontal_alignment = content_positions.first
                                 assign text_vertical_alignment = content_positions.last | strip
                                 assign text_color = block.settings.content_text_color
+                                assign is_first_slide = forloop.first
                               %}
                                 <div {{ block.shopify_attributes }} data-slide="{{ forloop.index0 }}" class="relative swiper-slide w-full h-full sf-bg-lazy">
                                     {% if block.settings.item_image != blank %}
-                                        {% render 'responsive-image', image: block.settings.item_image, wrapper_class: 'w-full h-full' %}
+                                        {% if is_first_slide %}
+                                            {% render 'responsive-image', image: block.settings.item_image, wrapper_class: 'w-full h-full', lazy_load: false, fetchpriority: 'high' %}
+                                        {% else %}
+                                            {% render 'responsive-image', image: block.settings.item_image, wrapper_class: 'w-full h-full' %}
+                                        {% endif %}
                                     {% else %}
                                         {% capture current %}{% cycle 1, 2, 3 %}{% endcapture %}
                                         {{ 'collection-' | append: current | placeholder_svg_tag: 'sf__placeholder-svg w-full h-full w-full h-full object-cover' }}

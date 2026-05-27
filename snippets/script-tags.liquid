@@ -22,7 +22,11 @@
       console.error("Failed to __detectBgSections.", error)
     }
   }
-  __detectBgSections();
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __detectBgSections);
+  } else {
+    __detectBgSections();
+  }
 {%- endif -%}
 
 {%- if request.design_mode -%}

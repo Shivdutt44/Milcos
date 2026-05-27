@@ -17,7 +17,8 @@
 %}
 
 {% if should_show %}
-{{ 'cookie-banner.css' | asset_url | stylesheet_tag }}
+<link rel="preload" as="style" href="{{ 'cookie-banner.css' | asset_url }}" onload="__as(this)">
+<noscript>{{ 'cookie-banner.css' | asset_url | stylesheet_tag }}</noscript>
 <div id="m-cookie-banner" class="m-cookie-banner m-cookie-banner--{{ cookie_consent_placement }} m-cookie-banner--{{ cookie_consent_theme }}" {% if cookie_design_mode and request.design_mode %}style="display: flex;"{% endif %}>
   {% if cookie_consent_message != blank %}
   <span class="m-cookie-banner__message">

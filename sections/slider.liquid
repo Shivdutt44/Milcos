@@ -1,4 +1,5 @@
-{{ 'slideshow.css' | asset_url | stylesheet_tag }}
+<link rel="preload" as="style" href="{{ 'slideshow.css' | asset_url }}" onload="__as(this)">
+<noscript>{{ 'slideshow.css' | asset_url | stylesheet_tag }}</noscript>
 {% liquid
 assign st = section.settings
 if section.settings.slideshow_height == 'adapt'
@@ -116,8 +117,8 @@ assign use_content_above = section.settings.use_content_above
                             {%- if bs.background.width >= 3840 -%}{{ bs.background | image_url: width: 3840 }} 3840w,{%- endif -%}
                             {{ bs.background | image_url }} {{ bs.background.width }}w
                           " 
-                          sizes="100vw" src="{{ bs.background | image_url: width: 1500 }}" 
-                          loading="lazy"
+                          sizes="100vw" src="{{ bs.background | image_url: width: 1500 }}"
+                          {% if forloop.first %}loading="eager" fetchpriority="high" decoding="sync"{% else %}loading="lazy" decoding="async"{% endif %}
                           alt="{{ bs.background.alt | escape }}"
                           width="{{ bs.background.width }}"
                           height="{{ bs.background.width | divided_by: bs.background.aspect_ratio | round }}">
@@ -146,10 +147,8 @@ assign use_content_above = section.settings.use_content_above
                             {%- if bg_image.width >= 750 -%}{{ bg_image | image_url: width: 750 }} 750w,{%- endif -%}
                             {{ bg_image | image_url }} {{ bg_image.width }}w
                           " 
-                          sizes="100vw" src="{{ bg_image | image_url: width: 375 }}" 
-                          {% unless forloop.first %}
-                          loading="lazy"
-                          {% endunless %}
+                          sizes="100vw" src="{{ bg_image | image_url: width: 375 }}"
+                          {% if forloop.first %}loading="eager" fetchpriority="high" decoding="sync"{% else %}loading="lazy" decoding="async"{% endif %}
                           alt="{{ bg_image.alt | escape }}"
                           width="{{ bg_image.width }}"
                           height="{{ bg_image.width | divided_by: bg_image.aspect_ratio | round }}">

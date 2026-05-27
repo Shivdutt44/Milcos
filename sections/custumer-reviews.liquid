@@ -4,8 +4,9 @@
 {%- endcomment -%}
 
 
-{{ 'splide.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'splide.js' | asset_url }}"></script>
+<link rel="preload" as="style" href="{{ 'splide.css' | asset_url }}" onload="__as(this)">
+<noscript>{{ 'splide.css' | asset_url | stylesheet_tag }}</noscript>
+<script src="{{ 'splide.js' | asset_url }}" defer="defer"></script>
 
 
 {% capture css %}
@@ -359,9 +360,10 @@
 
  {{ html | strip_newlines }}
 
-  <script src="{{ 'splide.js' | asset_url }}"></script>
+  <script src="{{ 'splide.js' | asset_url }}" defer="defer"></script>
 
-{{ 'splide.css' | asset_url | stylesheet_tag }}
+<link rel="preload" as="style" href="{{ 'splide.css' | asset_url }}" onload="__as(this)">
+<noscript>{{ 'splide.css' | asset_url | stylesheet_tag }}</noscript>
 
     
 <script>
